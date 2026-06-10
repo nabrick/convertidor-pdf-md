@@ -116,7 +116,8 @@ class App(ctk.CTk):
             self.btn_convertir.configure(state="normal")
 
     def abrir_carpeta(self):
-        subprocess.Popen(f'explorer "{self.destino_path}"')
+        path = os.path.normpath(self.destino_path)
+        subprocess.Popen(f'explorer "{path}"')
 
 if __name__ == "__main__":
     app = App()
