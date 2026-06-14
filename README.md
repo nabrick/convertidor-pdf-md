@@ -13,9 +13,15 @@ Convierte cualquier PDF a un archivo `.md` usando [Docling](https://github.com/D
 
 ## Instalación
 
+Se recomienda usar un entorno virtual para no mezclar las dependencias de este proyecto (Docling, PyTorch, etc.) con el resto de tu instalación de Python.
+
 \`\`\`bash
+python -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
 \`\`\`
+
+En Linux/Mac, activar con: \`source .venv/bin/activate\`
 
 ### Primera vez (requiere internet)
 

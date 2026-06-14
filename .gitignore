@@ -6,3 +6,6 @@ build/
 
 ## archivos
 build_log.txt
+
+## entorno virtual
+.venv/
