@@ -1,4 +1,4 @@
-# PDF → Markdown
+# PDF to Markdown
 
 Convierte PDFs a Markdown de forma local y privada, sin internet.
 
@@ -9,14 +9,13 @@ Convierte cualquier PDF a un archivo `.md` usando [Docling](https://github.com/D
 ## Requisitos
 
 - Python 3.11+
-- [Ollama](https://ollama.com) instalado
 - GPU NVIDIA recomendada (funciona también en CPU)
 
 ## Instalación
 
-```bash
+\`\`\`bash
 pip install -r requirements.txt
-```
+\`\`\`
 
 ### Primera vez (requiere internet)
 
@@ -26,9 +25,9 @@ Después de esa descarga, funciona completamente offline.
 
 ## Uso
 
-```bash
+\`\`\`bash
 py convertir_a_md.py
-```
+\`\`\`
 
 1. Seleccioná el PDF de origen
 2. Elegí la carpeta destino del `.md`
