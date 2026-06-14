@@ -1,2 +1,5 @@
 customtkinter
 docling
+# Nota: docling trae torch como dependencia transitiva.
+# CVE-2025-3000 (torch 2.6.0) se ignora en el workflow de seguridad
+# porque las versiones actuales (2.12+) no están afectadas.

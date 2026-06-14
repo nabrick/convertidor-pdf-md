@@ -24,4 +24,7 @@ jobs:
         run: pip install pip-audit
 
       - name: Auditar vulnerabilidades
-        run: pip-audit
+        # CVE-2025-3000 afecta a torch 2.6.0 (torch.jit.script). La versión instalada
+        # aquí (2.12.0+) es muy posterior, pero el registro en OSV no declara una
+        # "fix version", por lo que pip-audit lo marca igual. Se ignora explícitamente.
+        run: pip-audit --ignore-vuln CVE-2025-3000
